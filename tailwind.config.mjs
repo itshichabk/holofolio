@@ -8,8 +8,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        holo: "#33b5e5",
       },
     },
   },
