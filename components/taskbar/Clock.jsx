@@ -5,7 +5,7 @@ export default function Clock() {
 
   function startTime() {
     const today = new Date();
-    let h = today.getHours();
+    let h = checkTime(today.getHours());
     let m = checkTime(today.getMinutes());
     let s = checkTime(today.getSeconds());
 
@@ -22,6 +22,6 @@ export default function Clock() {
   }
 
   return (
-    <div className="text-holo hover:cursor-default select-none">{time}</div>
+    <div className="text-holo hover:cursor-default select-none text-lg">{time}</div>
   )
 }

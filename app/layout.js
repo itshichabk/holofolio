@@ -1,7 +1,6 @@
 import { Roboto } from "next/font/google";
 import "./globals.css";
-import Taskbar from "@/components/taskbar/Taskbar";
-import StartMenu from "@/components/startmenu/StartMenu";
+import Desktop from "@/components/Desktop";
 
 const roboto = Roboto({
   weight: '400',
@@ -14,14 +13,13 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+
   return (
     <html className={roboto.className}>
-      <body className="flex h-screen flex-col text-white">
-        <div className="relative grow">
+      <body>
+        <Desktop>
           {children}
-          <StartMenu/>
-        </div>
-        <Taskbar/>
+        </Desktop>
       </body>
     </html>
   );

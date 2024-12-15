@@ -1,10 +1,13 @@
-export default function StartItem({ icon, label, link, width }) {
-
-    const w = width == "1/3" ? "128" : "192";
+import Link from "next/link";
+import Image from 'next/image'
+export default function StartItem({ icon = "droid.webp", label, link, rounded = false, setShowStart }) {
 
   return (
-    <div className={"w-[" + w + "px] h-[128px] flex flex-col items-center justify-center border border-gray-800 hover:cursor-pointer hover:bg-gray-700"}>
-        {label}
-    </div>
+    <Link href={link} onClick={() => setShowStart(false)}>
+        <div className={"w-[128px] h-[128px] flex flex-col items-center justify-center border border-gray-800 hover:cursor-pointer active:bg-gray-800 hover:bg-gray-700 select-none"}>
+            <Image src={"/icons/" + icon} alt={label} width={36} height={36} className={"mb-2" + (rounded ? " rounded-full" : "")}/> 
+            {label}
+        </div>
+    </Link>
   )
 }
