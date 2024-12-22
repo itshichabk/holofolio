@@ -4,7 +4,8 @@
 
 body {
   font-family: Roboto, sans-serif;
-  background-image: url("../public/img/bg/holo.jpg");
+  background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.wallpapersafari.com%2F29%2F46%2FIXYBur.jpg&f=1&nofb=1&ipt=a519fd5b059e24321681c4fa726b39eaf45a7d41e233c57420f122d9dcf7fa01&ipo=images");
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }

@@ -13,6 +13,7 @@ export default function Clock() {
   }
 
   useEffect(() => {
+    startTime();
     const timeout = setInterval(startTime, 1000);
     return () => setInterval(timeout);
   }, [])
