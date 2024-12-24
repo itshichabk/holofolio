@@ -9,7 +9,7 @@ export default function Desktop({children}) {
 
   return (
     <div className="flex h-screen flex-col text-white relative">
-        <div className="relative grow">
+        <div className="relative flex-auto overflow-y-auto">
           {children}
           {showStart && <StartMenu setShowStart={setShowStart}/>}
         </div>

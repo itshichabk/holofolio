@@ -1,4 +1,5 @@
 /* eslint react/no-unescaped-entities: 0 */
+/* eslint react-hooks/exhaustive-deps: 0 */
 
 "use client";
 
