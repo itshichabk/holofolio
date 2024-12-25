@@ -39,14 +39,7 @@ export default function AboutMeLayout({children}) {
               I mainly master structured programming and OOP, relational
               databases, as well as numerous technologies used in both frontend
               and backend Web development. I am also able to install, maintain
-              and repair computers, and I have basic knowledge of networking.
-            </p>
-            <p className="mb-2">
-              My first internship has allowed me to explore Web development for
-              the first time in an autonomous way. That resourcefulness still
-              helps me to this day at school, where I was able to exploit
-              further my programming skills, and learn and apply methods to
-              manage a team project like in business.
+              and repair computers and other electronic devices, and I have basic knowledge of networking.
             </p>
             <p className="mb-2">
               My goal is to further explore and gather new skills in software
