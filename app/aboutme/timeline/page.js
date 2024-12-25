@@ -3,70 +3,81 @@
 
 import TimelineSection from "@/components/aboutme/TimelineSection";
 import TimelineYear from "@/components/TimelineYear";
+import { useState } from "react";
 
 export default function Timeline() {
+  const [xda, setXda] = useState(false);
+
   return (
-    <div className="overflow-y-scroll">
-      <TimelineYear year="2013" description="The year when it all began">
-        <TimelineSection img="evasi0n.png" title="Homebrews and jailbreaks">
-          <p className="my-2">
-            My first adventures in tech started at nine with jailbreaking an iPad and an iPhone, and installing the Homebrew channel on a Wii using an SD card.
-            Alone, I was following YouTube tutorials on how to do each, and I was surprised to see how easy and straightforward it was,
-            and most importantly how things just worked <span className="italic text-sm">(innocent days...)</span>.
-          </p>
-          <p>
-            Later, I got my first smartphone as a gift.
-            It was a Samsung Galaxy Wonder, a phone from 2011. I enjoyed using it until I started noticing it was running slower than usual.
-            So I did what any normal person would do and looked up:
-          </p>
-          <div className="font-bold text-lg text-center my-3 w-full italic">"how to jailbreak samsung"</div>
-          <p>
-            Little did I know that one Google search would lead me to a rabbit hole with no exit.
-          </p>
-        </TimelineSection>
-      </TimelineYear>
+    <div className="my-10 mx-4 text-justify">
+      <h1 className="mb-4 text-holo font-bold text-3xl">My tech journey</h1>
+      <p className="mb-2">
+        My first adventures in tech started at 9 with jailbreaking an iPad, an iPhone and a Wii.
+        Alone, I was following YouTube tutorials on how to do each, and I was surprised to see how easy and straightforward it was,
+        and most importantly how things just worked <span className="italic text-sm">(innocent days...)</span>.
+      </p>
+      <p>
+        Later, I got my first smartphone, a Samsung Galaxy Wonder from 2011, as a gift. I enjoyed using it until I started noticing it was running slower than usual.
+        So I did what any normal person would do and looked up:
+      </p>
+      <div className="font-bold text-lg text-center my-3 w-full italic">"how to jailbreak samsung"</div>
+      <p className="mb-2">
+        Little did I know that one Google search would lead me to a rabbit hole with no exit.
+      </p>
+      <p className="mb-2">
+        By following more tutorials, I learned about "custom ROMs", and I was able to install a custom operating system on my phone (CyanogenMod 10).
+        It felt so much faster and it even ran a newer version of Android that was never officially released by Samsung. That was my first proud tech achievement.
+      </p>
+      <p className="mb-2">
+        Soon after, I started fiddling with computers too by installing other versions of Windows, such as 8.1 and even the technical preview of Windows 10 in early 2015 before its final release.
+        I later installed Ubuntu too, mainly to <a onClick={() => setXda(true)} href="https://xdaforums.com/t/rom-sm-g350e-cyanogenmod-11-news.3226820/page-2#post-64789723" target="#" className="text-holo underline">try building an Android ROM on it with no success...</a>
+      </p>
 
-      <TimelineYear year="2014" description="My first OS adventures... and misadventures">
-        <TimelineSection img="cm.gif" title="Custom ROMs or why I wiped my phone's data every week">
-          <p className="my-2">
-            In case you haven't noticed, this website's UI is mainly inspired by the old <span className="text-holo font-bold">Holo</span> theme found in earlier versions of Android,
-            and in my first successful custom OS install on my phone, all thanks to a tutorial on YouTube!
-          </p>
-          <p className="my-2">
-            That OS was named CyanogenMod (now LineageOS). It used to be extremely popular in the early 2010s, notably on a forum called <a href="https://xdaforums.com" className="text-holo underline">XDA Developers</a>, where people build those custom ROMs
-            for many different devices, and my Galaxy W was no exception. 
-          </p>
-          <p>
-            After installing it, my phone did become much more performant and much nicer to use. That experiment was my first proud tech achievement, and I made sure it wouldn't be the last.
-          </p>
-        </TimelineSection>
+      { xda &&
+      <p className="my-4 p-2 border-2 border-orange-500">
+        It seems like you've clicked on the XDA link above!<br/>
+        I've spent a LOT of my time on that website since I was 11, it's a forum that is notably famous for finding custom operating systems and kernels for Android devices.
+        Back then, I enjoyed calling myself a "developer" despite not knowing a single programming language and doing nothing more than pressing buttons and editing files until my phone could boot...
+      </p>}
 
-        <TimelineSection img="win8.jpg" title='"Where did our data go?"'>
-          <div className="font-bold text-lg text-center mb-4 w-full italic">"One day, I want to make my own operating system for computers!"</div>
-          <p className="my-2">
-            This is the story of a ten year old Moroccan boy, who had a particular love for computers and technology.
-          </p>
-          <p className="my-2">
-            Dreaming of creating the Windows killer, he was... a bit too ambitious. Drawing mockups of a desktop with a start menu and windows on a school notebook, he decided to call the project "GlassesOS" or something similar,
-            as a reference to... his glasses. Genius.
-          </p>
-          <p className="my-2">
-            But that wasn't enough. He wanted to do something else, something more concrete. So on a 2014 summer, he decided to follow yet another online tutorial, format a USB drive (which may or may not have had data),
-            restart the family computer, and install a fresh copy of Windows 8.1, without ever thinking about the fate of the data that was sitting on the hard drive.
-          </p>
-          <p className="my-2">
-            Important documents? Spreadsheets? Programs? All that mattered for him was the taste of success and novelty, and the beauty of colored square icons on a mediocre UI made for tablets.
-          </p>
-          <p className="my-2">
-            Excited, he later tried doing the same thing during computer science class on one of the lab's Dell Optiplex towers, using the same USB drive.
-            However, as the monitor read "Windows is copying files...", the computer was thankfully so slow that his teacher caught him, and thus prevented his destructive desires from becoming reality.
-          </p>
-          <p className="text-sm italic">This would not be the first experiment of this kind.</p>
-        </TimelineSection>
-
-      </TimelineYear>
-
-
+      <p className="mb-2">
+        At the age of 12, I also got to discover virtual machines and had fun installing old versions of Windows on VirtualBox.
+      </p>
+      <p className="mb-2">
+        The following year, I got my first personal laptop (an Acer E5-575), and one of the first things I did was turning it into a Hackintosh!
+        There was no guide for my specific model, so I had to spend hours troubleshooting until <span className="italic">mostly</span> everything worked.
+        I was so happy of the result that <a className="text-holo underline" target="#" href="https://www.tonymacx86.com/threads/guide-acer-aspire-e5-575-52g6.227038/">I decided to share a guide for my specific laptop</a> so that others wouldn't have to endure the same pain anymore.
+      </p>
+      <p className="mb-2">
+        A few months later, I decided <span className="italic">(don't ask why)</span> to install incompatible versions of Windows on that same computer.
+        7 and 8.1 were easy to install, XP and 2000 however...<br/>
+        After being hit by countless BSODs, that were thankfully easy to troubleshoot as I was somewhat not the only person who would do such an experiment,
+        I actually managed to run both versions! Of course, the age gap being way too big (the laptop came out in 2017), drivers simply didn't exist for some of the most important devices, such as the USB controller
+        and the integrated graphics. Even essential functionalities like full shutdowns and CPU multi-core support didn't work!
+      </p>
+      <p className="mb-2">
+        <a className="text-holo underline italic" target="#" href="https://msfn.org/board/topic/177386-non-compliant-acpi-error-on-windows-xp-x64-setup/">
+          To this day, I still can't install install the x64 version of Windows XP on it...
+        </a>
+      </p>
+      <p className="mb-2">
+        Fast-forward to 2021, I finally started learning programming! Thanks to a free coupon for a paid Python online course I came across on Reddit, I was able to learn
+        fundamental concepts such as variables, loops and if-statements. Later, I got to learn C at a private computer science school, but they only taught the same basics.
+        So I took a step further and searched for other courses, and learned more advanced concepts like pointers, which took me a while to properly understand.
+        Feeling motivated by my newfound pastime, I created my GitHub profile and published <a className="text-holo underline" target="#" href="https://github.com/itshichabk/hOS">
+        my first personal programming project</a>, which is an OS-like program with a barebones login system and a few applications such as a calculator.
+        I also took the opportunity to learn basic Git concepts and commands. 
+      </p>
+      <p className="mb-2">
+        In 2022, I took a two-month-long internship at a software consulting enterprise called I-Eteria, where I learned even more languages for Web development, which
+        I had never done before. HTML, CSS, JavaScript and MySQL. I had to learn these mostly by myself online. Given the fact that I already knew Python, 
+        I was also asked to put those newly acquired skills to the test and create a fictional <a className="text-holo underline" target="#" href="https://github.com/itshichabk/stage_webapp">Web application</a> for managing products, orders and invoices, using Python as the backend (Flask). 
+      </p>
+      <p className="mb-2">
+        Later that year, I started studying abroad in computer science at Cégep de Sherbrooke in Quebec, Canada. Having already learned the basics of programming and Web development, the first semesters were relatively easy.
+        However, not only did I acquire new technical skills in object-oriented programming, mobile development (Android), networking and IoT, I also learned how to manage a team project using methods 
+        found in business like Scrum. Those soft skills were especially put in practice on a semester-long project where my team had to create a full production-ready website for a real client.
+      </p>
     </div>
   )
 }
