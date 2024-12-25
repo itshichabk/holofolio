@@ -31,7 +31,7 @@ export default function AboutMeLayout({children}) {
               Web developer, and computer technician.
             </p>
             <p className="mb-2">
-              Being a technology enthusiast since I was a kid, I have always
+              Technology enthusiast since I was a kid, I have always
               loved troubleshooting and finding solutions to problems,
               especially if they're less obvious.
             </p>
@@ -47,7 +47,7 @@ export default function AboutMeLayout({children}) {
             </p>
           </div>
         </div>
-        <div className={"lg:flex-auto overflow-y-scroll lg:px-4 lg:w-2/3 " + (pathname == "/aboutme" ? " hidden lg:block" : "")}>
+        <div className={"lg:flex-auto overflow-y-scroll lg:px-4 w-full lg:w-2/3 " + (pathname == "/aboutme" ? " hidden lg:block" : "")}>
           {children}
         </div>
       </div>

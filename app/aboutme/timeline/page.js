@@ -11,6 +11,8 @@ export default function Timeline() {
   return (
     <div className="my-10 mx-4 text-justify">
       <h1 className="mb-4 text-holo font-bold text-3xl">My tech journey</h1>
+
+      <h2 className="mb-2 text-holo font-bold text-2xl text-start">2013-2015 — The beginnings</h2>
       <p className="mb-2">
         My first adventures in tech started at 9 with jailbreaking an iPad, an iPhone and a Wii.
         Alone, I was following YouTube tutorials on how to do each, and I was surprised to see how easy and straightforward it was,
@@ -28,6 +30,8 @@ export default function Timeline() {
         By following more tutorials, I learned about "custom ROMs", and I was able to install a custom operating system on my phone (CyanogenMod 10).
         It felt so much faster and it even ran a newer version of Android that was never officially released by Samsung. That was my first proud tech achievement.
       </p>
+
+      <h2 className="mt-6 mb-2 text-holo font-bold text-2xl text-start leading-6">2015-2021 — <span className="whitespace-nowrap text-xl lg:text-2xl">Computer adventures and misadventures</span></h2>
       <p className="mb-2">
         Soon after, I started fiddling with computers too by installing other versions of Windows, such as 8.1 and even the technical preview of Windows 10 in early 2015 before its final release.
         I later installed Ubuntu too, mainly to <a onClick={() => setXda(true)} href="https://xdaforums.com/t/rom-sm-g350e-cyanogenmod-11-news.3226820/page-2#post-64789723" target="#" className="text-holo underline">try building an Android ROM on it with no success...</a>
@@ -60,6 +64,8 @@ export default function Timeline() {
           To this day, I still can't install install the x64 version of Windows XP on it...
         </a>
       </p>
+
+      <h2 className="mt-6 mb-2 text-holo font-bold text-2xl text-start leading-6">2021-now — <span className="font-mono whitespace-nowrap text-xl lg:text-2xl">print("I'm a programmer!");</span></h2>
       <p className="mb-2">
         Fast-forward to 2021, I finally started learning programming! Thanks to a free coupon for a paid Python online course I came across on Reddit, I was able to learn
         fundamental concepts such as variables, loops and if-statements. Later, I got to learn C at a private computer science school, but they only taught the same basics.

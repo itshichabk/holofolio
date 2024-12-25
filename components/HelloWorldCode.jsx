@@ -3,18 +3,19 @@
 import { useEffect, useState } from "react"
 
 export default function HelloWorldCode() {
+  const helloWorld = <span className="font-bold text-holo text-xl leading-6">Hello world!</span>;
 
   // PHP, Python, C, JavaScript, C++, Java
   const lines = [
-    <>echo("<span className="font-bold text-holo text-xl">Hello world!</span>");</>,
-    <>print("<span className="font-bold text-holo text-xl">Hello world!</span>")</>,
-    <>printf("<span className="font-bold text-holo text-xl">Hello world!</span>");</>,
-    <>console.log("<span className="font-bold text-holo text-xl">Hello world!</span>");</>,
-    <>std::cout {"<<"} "<span className="font-bold text-holo text-xl">Hello world!</span>";</>,
-    <>System.out.println("<span className="font-bold text-holo text-xl">Hello world!</span>");</>
+    <>echo("{helloWorld}");</>,
+    <>print("{helloWorld}")</>,
+    <>printf("{helloWorld}");</>,
+    <>console.log("{helloWorld}");</>,
+    <>std::cout {"<<"} "{helloWorld}";</>,
+    <>System.out.println("{helloWorld}");</>
   ];
 
-  const [line, setLine] = useState(0);
+  const [line, setLine] = useState(5);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -28,8 +29,8 @@ export default function HelloWorldCode() {
   }, [line])
 
   return (
-    <div className="mb-4 md:mb-0 h-12 flex items-center justify-center">
-      <p className="w-full text-center font-mono">{lines[line]}</p>
+    <div className="mb-4 h-12 flex items-center justify-center">
+      <p className="w-full text-center font-mono leading-">{lines[line]}</p>
     </div>
     
   )
