@@ -77,6 +77,7 @@ export default function Timeline() {
         Later that year, I started studying abroad in computer science at Cégep de Sherbrooke in Quebec, Canada. Having already learned the basics of programming and Web development, the first semesters were relatively easy.
         However, not only did I acquire new technical skills in object-oriented programming, mobile development (Android), networking and IoT, I also learned how to manage a team project using methods 
         found in business like Scrum. Those soft skills were especially put in practice on a semester-long project where my team had to create a full production-ready website for a real client.
+        Unlike most of my projects when I worked alone, I was able to fully take advantage of most Git features like branches, pull requests and webhooks (for autotomatic deployments).  
       </p>
     </div>
   )
