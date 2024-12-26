@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'AndroidClock';
+  src: url('../public/fonts/AndroidClock.ttf');
+}
+
 body {
   background-color: black;
   font-family: Roboto, sans-serif;
@@ -10,6 +15,10 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
+}
+
+.clock-widget {
+  font-family: "AndroidClock";
 }
 
 ::-webkit-scrollbar {

@@ -1,5 +1,5 @@
 import DrawerIcon from "./icons/DrawerIcon";
-import SettingsIcon from "./icons/SettingsIcon";
+import SettingsIcon from "./icons/apps/SettingsIcon";
 
 export default function Dock() {
   return (

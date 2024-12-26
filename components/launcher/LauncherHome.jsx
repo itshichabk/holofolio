@@ -1,5 +1,5 @@
 import React from 'react'
-import SettingsIcon from './icons/SettingsIcon'
+import SettingsIcon from './icons/apps/SettingsIcon'
 
 export default function LauncherHome() {
   let icons = []

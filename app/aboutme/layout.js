@@ -13,8 +13,8 @@ export default function AboutMeLayout({children}) {
 
   return (
     <div className="h-full bg-black bg-opacity-70 lg:bg-opacity-80 flex flex-col">
-      <div className="border-b border-holo shadow-md h-12 flex items-center bg-neutral-900 px-3 sticky top-0 z-10">
-          <Image src={"/icons/profile.jpg"} alt="About me" width={36} height={36} className="rounded-full mr-1"/> 
+      <div className="border-b border-t border-b-neutral-900 border-t-neutral-700 shadow-md h-14 flex items-center bg-neutral-800 px-3 sticky top-0 z-10">
+          <Image src={"/icons/profile.jpg"} alt="About me" width={36} height={36} className="rounded-full mr-2 text-lg"/> 
           <p>About me</p>
       </div>
       <div className="sm:mx-3 h-full flex flex-auto lg:mx-0 overflow-hidden relative">

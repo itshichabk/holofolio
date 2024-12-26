@@ -1,4 +1,4 @@
-import Icon from "./Icon";
+import Icon from "../Icon";
 
 export default function SettingsIcon({ showLabel }) {
   return (
