@@ -2,6 +2,7 @@
 "use client";
 
 import TimelineSection from "@/components/aboutme/TimelineSection";
+import Hyperlink from "@/components/text/Hyperlink";
 import TimelineYear from "@/components/TimelineYear";
 import { useState } from "react";
 
@@ -10,7 +11,7 @@ export default function Timeline() {
 
   return (
     <div className="my-10 mx-4 text-justify">
-      <h1 className="mb-4 text-holo font-bold text-3xl">My tech journey</h1>
+      <h1 className="mb-6 text-holo font-bold text-3xl">My tech journey</h1>
 
       <h2 className="mb-2 text-holo font-bold text-2xl text-start">2013-2015 — The beginnings</h2>
       <p className="mb-2">
@@ -34,7 +35,7 @@ export default function Timeline() {
       <h2 className="mt-6 mb-2 text-holo font-bold text-2xl text-start leading-6">2015-2021 — <span className="whitespace-nowrap text-xl lg:text-2xl">Computer adventures and misadventures</span></h2>
       <p className="mb-2">
         Soon after, I started fiddling with computers too by installing other versions of Windows, such as 8.1 and even the technical preview of Windows 10 in early 2015 before its final release.
-        I later installed Ubuntu too, mainly to <a onClick={() => setXda(true)} href="https://xdaforums.com/t/rom-sm-g350e-cyanogenmod-11-news.3226820/page-2#post-64789723" target="#" className="text-holo underline">try building an Android ROM on it with no success...</a>
+        I later installed Ubuntu too, mainly to <Hyperlink onClick={() => setXda(true)} href="https://xdaforums.com/t/rom-sm-g350e-cyanogenmod-11-news.3226820/page-2#post-64789723">try building an Android ROM on it with no success...</Hyperlink>
       </p>
 
       { xda &&
@@ -50,7 +51,7 @@ export default function Timeline() {
       <p className="mb-2">
         The following year, I got my first personal laptop (an Acer E5-575), and one of the first things I did was turning it into a Hackintosh!
         There was no guide for my specific model, so I had to spend hours troubleshooting until <span className="italic">mostly</span> everything worked.
-        I was so happy of the result that <a className="text-holo underline" target="#" href="https://www.tonymacx86.com/threads/guide-acer-aspire-e5-575-52g6.227038/">I decided to share a guide for my specific laptop</a> so that others wouldn't have to endure the same pain anymore.
+        I was so happy of the result that <Hyperlink href="https://www.tonymacx86.com/threads/guide-acer-aspire-e5-575-52g6.227038/">I decided to share a guide for my specific laptop</Hyperlink> so that others wouldn't have to endure the same pain anymore.
       </p>
       <p className="mb-2">
         A few months later, I decided <span className="italic">(don't ask why)</span> to install incompatible versions of Windows on that same computer.
@@ -60,9 +61,9 @@ export default function Timeline() {
         and the integrated graphics. Even essential functionalities like full shutdowns and CPU multi-core support didn't work!
       </p>
       <p className="mb-2">
-        <a className="text-holo underline italic" target="#" href="https://msfn.org/board/topic/177386-non-compliant-acpi-error-on-windows-xp-x64-setup/">
+        <Hyperlink href="https://msfn.org/board/topic/177386-non-compliant-acpi-error-on-windows-xp-x64-setup/">
           To this day, I still can't install install the x64 version of Windows XP on it...
-        </a>
+        </Hyperlink>
       </p>
 
       <h2 className="mt-6 mb-2 text-holo font-bold text-2xl text-start leading-6">2021-now — <span className="font-mono whitespace-nowrap text-xl lg:text-2xl">print("I'm a programmer!");</span></h2>
@@ -70,14 +71,14 @@ export default function Timeline() {
         Fast-forward to 2021, I finally started learning programming! Thanks to a free coupon for a paid Python online course I came across on Reddit, I was able to learn
         fundamental concepts such as variables, loops and if-statements. Later, I got to learn C at a private computer science school, but they only taught the same basics.
         So I took a step further and searched for other courses, and learned more advanced concepts like pointers, which took me a while to properly understand.
-        Feeling motivated by my newfound pastime, I created my GitHub profile and published <a className="text-holo underline" target="#" href="https://github.com/itshichabk/hOS">
-        my first personal programming project</a>, which is an OS-like program with a barebones login system and a few applications such as a calculator.
+        Feeling motivated by my newfound pastime, I created my GitHub profile and published <Hyperlink href="https://github.com/itshichabk/hOS">
+        my first personal programming project</Hyperlink>, which is an OS-like program with a barebones login system and a few applications such as a calculator.
         I also took the opportunity to learn basic Git concepts and commands. 
       </p>
       <p className="mb-2">
-        In 2022, I took a two-month-long internship at a software consulting enterprise called I-Eteria, where I learned even more languages for Web development, which
+        In 2022, I took a two-month-long internship at a software consulting enterprise called <Hyperlink href="https://www.i-eteria.com/">I-Eteria</Hyperlink>, where I learned even more languages for Web development, which
         I had never done before. HTML, CSS, JavaScript and MySQL. I had to learn these mostly by myself online. Given the fact that I already knew Python, 
-        I was also asked to put those newly acquired skills to the test and create a fictional <a className="text-holo underline" target="#" href="https://github.com/itshichabk/stage_webapp">Web application</a> for managing products, orders and invoices, using Python as the backend (Flask). 
+        I was also asked to put those newly acquired skills to the test and create a fictional <Hyperlink href="https://github.com/itshichabk/stage_webapp">Web application</Hyperlink> for managing products, orders and invoices, using Python as the backend (Flask). 
       </p>
       <p className="mb-2">
         Later that year, I started studying abroad in computer science at Cégep de Sherbrooke in Quebec, Canada. Having already learned the basics of programming and Web development, the first semesters were relatively easy.

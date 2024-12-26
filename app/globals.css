@@ -3,9 +3,34 @@
 @tailwind utilities;
 
 body {
+  background-color: black;
   font-family: Roboto, sans-serif;
   background-image: url("../public/img/bg/holo.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+@media (min-width: 1024px) { 
+  ::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: black;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #88888867;
+    border-radius: 5px;
+    margin: 4px 0;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #33b5e5;
+  }
 }

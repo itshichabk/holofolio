@@ -23,6 +23,8 @@ export default function AboutMeLayout({children}) {
           <HelloWorldCode/>
 
           <SettingsRow link="/aboutme/timeline" title="My tech journey" value="My progress over the years"/>
+          <SettingsRow link="/aboutme/skills" title="Skills"/>
+          <SettingsRow link="/aboutme/hobbies" title="Hobbies" value="Tech and non-tech"/>
           <SettingsRow link="/aboutme/specs" title="System information" value="More details"/>
 
           <div className="my-6 lg:mx-2 text-justify">
@@ -37,9 +39,8 @@ export default function AboutMeLayout({children}) {
             </p>
             <p className="mb-2">
               I mainly master structured programming and OOP, relational
-              databases, as well as numerous technologies used in both frontend
-              and backend Web development. I am also able to install, maintain
-              and repair computers and other electronic devices, and I have basic knowledge of networking.
+              databases, and full-stack Web development. I am also able to install, maintain
+              and repair computers, and I have basic knowledge of networking.
             </p>
             <p className="mb-2">
               My goal is to further explore and gather new skills in software
