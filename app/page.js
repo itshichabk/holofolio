@@ -6,11 +6,10 @@ import Window from "@/components/window/Window";
 
 export default function Home() {
   return (
-    <div className="flex flex-col h-full">
+    <div className="flex flex-col h-full shadow-[0px_-20px_100px_black_inset]">
       <div className="flex-auto relative">
           <ClockWidget/>
       </div>
-      {/*<LauncherHome/>*/}
       <Dock/>
     </div>
   );

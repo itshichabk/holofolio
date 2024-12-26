@@ -14,12 +14,13 @@ export default function ClockWidget() {
         day: 'numeric' 
     };
     
-    function startTime() {    
-        let h = checkTime(today.getHours());
-        let m = checkTime(today.getMinutes());
-        //let s = checkTime(today.getSeconds());
+    function startTime() {
+        let now = new Date();
+        let h = checkTime(now.getHours());
+        let m = checkTime(now.getMinutes());
+        //let s = checkTime(now.getSeconds());
 
-        setTime(h + ":" + m/* + ":" + s*/);
+        setTime(h + ":" + m/*+ ":" + s*/);
     }
 
 
