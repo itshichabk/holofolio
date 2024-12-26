@@ -1,10 +1,16 @@
 "use client";
+import Dock from "@/components/launcher/Dock";
+import LauncherHome from "@/components/launcher/LauncherHome";
 import Window from "@/components/window/Window";
 
 export default function Home() {
   return (
-    <Window title="Hello world!">
-      Welcome to Holofolio! <br/> Click the home button on the bottom left for more.
-    </Window>
+    <div className="flex flex-col h-full">
+      <div className="flex-auto relative">
+        
+      </div>
+      {/*<LauncherHome/>*/}
+      <Dock/>
+    </div>
   );
 }

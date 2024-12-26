@@ -1,10 +1,10 @@
-"use client";
 import Image from 'next/image'
+import Link from 'next/link';
 
 export default function HomeButton({ showStart, setShowStart }) {
   return (
-    <button type="button" className='active:bg-gray-800 hover:bg-gray-700' onClick={() => setShowStart(!showStart)}>
-        <Image src="/icons/home.png" alt="Home" height={36} width={64}/>
-    </button>
+    <Link href="/" className='active:bg-gray-800 hover:bg-gray-700 w-1/3 flex justify-center h-full'>
+      <img src="/icons/home.png" alt="Home" className='mx-auto object-cover'/>
+    </Link>
   )
 }

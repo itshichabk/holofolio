@@ -1,3 +1,4 @@
+"use client";
 import { useEffect, useState } from "react"
 
 export default function Clock() {
@@ -7,9 +8,9 @@ export default function Clock() {
     const today = new Date();
     let h = checkTime(today.getHours());
     let m = checkTime(today.getMinutes());
-    let s = checkTime(today.getSeconds());
+    //let s = checkTime(today.getSeconds());
 
-    setTime(h + ":" + m + ":" + s);
+    setTime(h + ":" + m/* + ":" + s*/);
   }
 
   useEffect(() => {
@@ -23,6 +24,6 @@ export default function Clock() {
   }
 
   return (
-    <div className="text-holo hover:cursor-default select-none text-lg">{time}</div>
+    <div className="text-holo hover:cursor-default select-none text-lg font-extralight ml-2 mt-[1px]">{time}</div>
   )
 }

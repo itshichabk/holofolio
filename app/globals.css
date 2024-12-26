@@ -5,10 +5,11 @@
 body {
   background-color: black;
   font-family: Roboto, sans-serif;
-  background-image: url("../public/img/bg/holo.jpg");
+  background-image: url("../public/img/bg/holom.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-position: center center;
 }
 
 ::-webkit-scrollbar {
@@ -16,6 +17,10 @@ body {
 }
 
 @media (min-width: 1024px) { 
+  body {
+    background-image: url("../public/img/bg/holo.jpg");
+  }
+  
   ::-webkit-scrollbar {
     width: 4px;
   }
