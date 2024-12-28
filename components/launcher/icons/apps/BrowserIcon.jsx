@@ -1,7 +1,7 @@
 import Icon from "../Icon";
 
-export default function BrowserIcon({ showLabel }) {
+export default function BrowserIcon({ showLabel, hoverLabel}) {
   return (
-    <Icon icon="Browser.ico" label="Browser" link="browser" showLabel={showLabel}/>
+    <Icon icon="Browser.ico" label="Browser" link="browser" showLabel={showLabel} hoverLabel={hoverLabel}/>
   )
 }

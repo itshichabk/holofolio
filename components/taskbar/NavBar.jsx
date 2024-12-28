@@ -2,6 +2,7 @@
 
 import BackButton from "./BackButton";
 import Clock from "./Clock";
+import FullScreenButton from "./FullScreenButton";
 import HomeButton from "./HomeButton";
 
 export default function NavBar({ showStart, setShowStart }) {
@@ -12,9 +13,8 @@ export default function NavBar({ showStart, setShowStart }) {
         <div className="flex justify-between w-5/6 max-w-[300px] lg:max-w-[400px] mx-auto items-center h-full">
           <BackButton/>
           <HomeButton showStart={showStart} setShowStart={setShowStart}/>
-          <div className="w-1/3"></div>
+          <FullScreenButton/>
         </div>
-        {/*<Clock/>*/}
 	    </div>
     </div>
   )

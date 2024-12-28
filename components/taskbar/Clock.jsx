@@ -1,8 +1,10 @@
 "use client";
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react"
 
 export default function Clock() {
   const [time, setTime] = useState("");
+    const pathname = usePathname();
 
   function startTime() {
     const today = new Date();
@@ -23,7 +25,6 @@ export default function Clock() {
     return i < 10 ? "0" + i : i;
   }
 
-  return (
-    <div className="text-holo hover:cursor-default select-none text-lg font-extralight ml-2 mt-[1px]">{time}</div>
-  )
+  return  pathname != "/" && <div className="text-holo hover:cursor-default select-none text-lg font-extralight ml-2 mt-[1px]">{time}</div>
+  
 }
