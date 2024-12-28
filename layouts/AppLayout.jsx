@@ -2,14 +2,14 @@ import Image from "next/image";
 
 export default function AppLayout({ icon, title, translucent, children }) {
   return (
-    <div className={"h-full bg-black flex flex-col" + (translucent ? " bg-opacity-70" : "")}>
-      <div className="border-b border-t border-b-neutral-900 border-t-neutral-700 shadow-md h-14 flex items-center bg-neutral-800 px-3 sticky top-0 z-10">
+    <div className={"h-full bg-black flex flex-col bg-opacity-70"}>
+      <div className="border-b-2 border-t border-b-holo border-t-neutral-700 shadow-md h-[50px] flex items-center bg-black px-3 sticky top-0 z-10">
         <Image
           src={"/icons/" + (icon ?  icon : "droid.webp")}
           alt={title}
-          width={40}
-          height={40}
-          className="mr-2 text-lg"
+          width={36}
+          height={36}
+          className="mr-1"
         />
         <p>{ title }</p>
       </div>
