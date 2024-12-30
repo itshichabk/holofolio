@@ -11,6 +11,7 @@ export default function ContactForm() {
     emailjs.send("service_l6cnw6o", "template_sy8tbrc", 
                 {
                     "from_name": formData.get("name"),
+                    "email": formData.get("email"),
                     "subject":   formData.get("subject"),
                     "message":  formData.get("message")
                 }, 
