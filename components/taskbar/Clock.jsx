@@ -25,6 +25,5 @@ export default function Clock() {
     return i < 10 ? "0" + i : i;
   }
 
-  return  pathname != "/" && <div className="text-holo hover:cursor-default select-none text-lg font-extralight ml-2 mt-[1px]">{time}</div>
-  
+  return pathname != "/" && <div className="text-holo hover:cursor-default select-none text-lg font-extralight ml-[6px] mt-[1px]">{time}</div>
 }

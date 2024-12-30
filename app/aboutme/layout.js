@@ -13,7 +13,7 @@ export default function AboutMeLayout({children}) {
   const pathname = usePathname();
 
   return (
-    <AppLayout icon="profile.jpg" title="About me" translucent>
+    <AppLayout icon="aboutme.png" title="About me" translucent>
       <div className={"lg:flex-auto overflow-y-scroll px-4 lg:min-w-[350px] lg:w-1/4 lg:bg-black bg-opacity-75" + (pathname != "/aboutme" ? " hidden lg:block" : "")}>
         <Image src="/img/hicham.jpeg" alt="Hicham" width={96} height={96} className="mt-12 mb-4 mx-auto rounded-full border-2 border-holo"/>
         <HelloWorldCode/>

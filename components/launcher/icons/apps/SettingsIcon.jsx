@@ -3,6 +3,6 @@ import Icon from "../Icon";
 
 export default function SettingsIcon({ showLabel, hoverLabel }) {
   return (
-    <Icon icon="Settings.ico" label="Settings" link="aboutme" showLabel={showLabel} hoverLabel={hoverLabel}/>
+    <Icon icon="Settings.ico" label="Settings" link="settings" showLabel={showLabel} hoverLabel={hoverLabel}/>
   )
 }
