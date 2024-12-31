@@ -23,7 +23,7 @@ export default function ContactForm() {
   }
 
   return (
-    <Form className='mt-6 mb-4' action={handleSubmit}>
+    <Form className='my-6' action={handleSubmit}>
       <FormInput label="Your e-mail address" name="email" type="email"/>
       <FormInput label="Your name" name="name" type="text"/>
       <FormInput label="Subject" name="subject" type="text"/>
