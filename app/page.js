@@ -1,8 +1,8 @@
 "use client";
-import ClockWidget from "@/components/launcher/ClockWidget";
-import Dock from "@/components/launcher/Dock";
-import LauncherHome from "@/components/launcher/LauncherHome";
-import Window from "@/components/window/Window";
+import ClockWidget from "@/src/components/launcher/ClockWidget";
+import Dock from "@/src/components/launcher/Dock";
+import LauncherHome from "@/src/components/launcher/LauncherHome";
+import Window from "@/src/components/window/Window";
 
 export default function Home() {
   return (

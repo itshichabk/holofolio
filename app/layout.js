@@ -1,6 +1,6 @@
 import { Roboto } from "next/font/google";
 import "./globals.css";
-import Desktop from "@/components/Desktop";
+import Desktop from "@/src/components/Desktop";
 
 const roboto = Roboto({
   weight: '400',
@@ -8,7 +8,10 @@ const roboto = Roboto({
 })
 
 export const metadata = {
-  title: "Holofolio",
+  title: {
+    default: 'Holofolio',
+    template: '%s | Holofolio',
+  },
   description: "My portfolio website!",
 };
 
