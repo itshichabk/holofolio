@@ -11,7 +11,9 @@ export default function AboutMeLayout({children}) {
   return (
     <AppLayout name={name} title={title} translucent>
       <WelcomeSection/>
-      <MainSection/>
+      <MainSection>
+        {children}
+      </MainSection>
     </AppLayout>
   )
 }

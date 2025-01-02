@@ -1,4 +1,9 @@
-import { AboutMeIcon, BrowserIcon, CameraIcon, ContactIcon, SettingsIcon } from '@/src/components/launcher/icons/apps/Icons'
+import { AboutMeIcon, 
+         BrowserIcon, 
+         CameraIcon, 
+         ContactIcon,
+         SettingsIcon 
+} from '@/src/components/launcher/icons/apps/Icons'
 
 export default function Drawer() {
   return (
