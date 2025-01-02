@@ -1,14 +1,28 @@
-import AppLayout from "@/src/layouts/AppLayout";
-import { makeMetadata } from "@/src/utils/utils";
+"use client";
 
-const title = "Camera";
-const name = "camera";
-export const metadata = makeMetadata(title, name);
+export default function Camera() {
+  let mediaDevices = navigator.mediaDevices;
 
-export default function ContactMeApp() {
   return (
-    <AppLayout name={name} title={title}>
-        
-    </AppLayout>
+    <div>
+        <video className="h-96 w-full" id="vid"/>
+        <button onClick={() => {
+            let video = document.getElementById("vid");
+
+            mediaDevices
+            .getUserMedia({
+                video: true,
+                audio: true,
+            })
+            .then((stream) => {
+                // Changing the source of video to current stream.
+                video.srcObject = stream;
+                video.addEventListener("loadedmetadata", () => {
+                    video.play();
+                });
+            })
+            .catch(alert);
+        }}>CLICK ME</button>
+    </div>
   )
 }
