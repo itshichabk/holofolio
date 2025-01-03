@@ -1,7 +1,7 @@
 import DrawerIcon from "./icons/DrawerIcon";
 import AboutMeIcon from "./icons/apps/AboutMeIcon";
 import BrowserIcon from "./icons/apps/BrowserIcon";
-import CameraIcon from "./icons/apps/CameraIcon";
+import CameraIcon from "./icons/apps/GalleryIcon";
 import ContactIcon from "./icons/apps/ContactIcon";
 import SettingsIcon from "./icons/apps/SettingsIcon";
 

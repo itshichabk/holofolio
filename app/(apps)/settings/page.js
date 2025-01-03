@@ -1,5 +1,5 @@
 import AppLayout from "@/src/layouts/AppLayout";
-import { makeMetadata } from "@/src/utils/utils";
+import { makeMetadata } from "@/src/utils/makeMetadata";
 
 const title = "Settings";
 const name = "settings";

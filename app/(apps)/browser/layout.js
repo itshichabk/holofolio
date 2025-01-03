@@ -1,5 +1,5 @@
 import AppLayout from "@/src/layouts/AppLayout";
-import { makeMetadata } from "@/src/utils/utils";
+import { makeMetadata } from "@/src/utils/makeMetadata";
 
 const title = "Browser";
 const name = "browser";
