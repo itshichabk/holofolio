@@ -1,0 +1,63 @@
+[
+    {
+        "name": "ios7",
+        "title": "Evasion",
+        "source": "Apple iOS 7",
+        "description": "The default wallpaper of the devices I jailbroke as a kid."
+    },
+    {
+        "name": "wonder",
+        "title": "Wonders",
+        "source": "Samsung TouchWiz (Android 2.3)",
+        "description": "The default wallpaper of my first smartphone, the Samsung Galaxy W, on which I installed countless custom ROMs."
+    },
+    {
+        "name": "win8",
+        "title": "Backupless",
+        "source": "Windows 8.1",
+        "description": "The default wallpaper of my first successful OS install on a computer... How could I have known there was important data on the family computer?"
+    },
+    {
+        "name": "holo",
+        "title": "Holo-graphic",
+        "source": "Android 4.1 (Jelly Bean)",
+        "description": "The default wallpaper of my first custom OS install I did on my phone when I was ten."
+    },
+    {
+        "name": "cid",
+        "title": "Warranty Voider",
+        "source": "CyanogenMod 10",
+        "description": "If I had a cent for every CyanogenMod version I installed on a phone..."
+    },
+    {
+        "name": "win10tp",
+        "title": "Not For Public Release",
+        "source": "Windows 10 (Technical Preview)",
+        "description": "I tried installing Windows 10 a few months before its launch. Wait, what did you say about \"backups\"?"
+    },
+    {
+        "name": "ubuntu",
+        "title": "Trusty Tahr",
+        "source": "Ubuntu 14.04",
+        "description": "I had first installed it for building an Android ROM until I realized I had installed the 32-bit version while our computer actually supported x64... (that still didn't solve the problem)"
+    },
+    {
+        "name": "s5",
+        "title": "TouchWiz",
+        "source": "Samsung TouchWiz (Android 4.4)",
+        "description": "Wallpaper from the Galaxy Star 2 Plus (and the Galaxy S5), the first phone I bought with my own money, and on which I ported a custom ROM for the first time ever when I was 12!"
+    },
+    {
+        "name": "sierra",
+        "title": "Sierra Leone",
+        "source": "macOS 10.12",
+        "description": "My first Hackintosh install's default wallpaper! The hours of troubleshooting were worth it."
+    },
+    {
+        "name": "longhorn",
+        "title": "Hasta la Vista",
+        "source": "Windows Vista (Beta 1)",
+        "description": "In 2018, I took interest in beta versions of Windows, particularly Longhorn (which eventually became Vista). The story behind it is very interesting in case you want to look it up."
+    }
+
+]
