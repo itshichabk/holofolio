@@ -1,5 +1,5 @@
-import MapPopup from "../MapPopup";
-import MapMarker from "./MapMarker";
+import MapPopup from "../../MapPopup";
+import MapMarker from "../MapMarker";
 
 export default function BruxellesMarker() {
   return (
