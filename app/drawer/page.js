@@ -2,7 +2,8 @@ import { AboutMeIcon,
          BrowserIcon, 
          CameraIcon, 
          ContactIcon,
-         SettingsIcon 
+         SettingsIcon,
+         MapsIcon 
 } from '@/src/components/launcher/icons/apps/Icons'
 
 export default function Drawer() {
@@ -13,6 +14,7 @@ export default function Drawer() {
             <BrowserIcon  showLabel hoverLabel={false}/>
             <CameraIcon   showLabel hoverLabel={false}/>
             <ContactIcon  showLabel hoverLabel={false}/>
+            <MapsIcon     showLabel hoverLabel={false}/>
             <SettingsIcon showLabel hoverLabel={false}/>
         </div>
     </div>

@@ -48,3 +48,14 @@ body {
     background: #33b5e5;
   }
 }
+
+.leaflet-popup-tip {
+  background-color: #33b5e5 !important;
+}
+
+.leaflet-popup-content-wrapper {
+  border-radius: 0px !important;
+  color: white !important;
+  border: 2px solid #33b5e5;
+  background-color: black !important;
+}
