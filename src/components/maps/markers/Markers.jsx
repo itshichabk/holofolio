@@ -1,14 +1,12 @@
 import MapMarker from "./MapMarker";
 import MapPopup from "../MapPopup";
 
-export default function Markers({places}) {
-  //const places = []//await travelPlacesDB();
-  
+export default function Markers({places, setImgPopup, setSelectedImg}) {
   return (
     <>
       { places.map((place, index) => 
         <MapMarker position={place.position} key={index}>
-          <MapPopup>{place.name}<br/>{place.description.en}</MapPopup>
+          <MapPopup place={place} setImgPopup={setImgPopup} setSelectedImg={setSelectedImg}/>
         </MapMarker>)
       }    
     </>

@@ -7,6 +7,15 @@
   src: url('../public/fonts/AndroidClock.ttf');
 }
 
+@font-face {
+  font-family: 'Roboto';
+  src: url('../public/fonts/Roboto.ttf');
+}
+
+.roboto {
+  font-family: "Roboto" !important;
+}
+
 body {
   background-color: black;
   font-family: Roboto, sans-serif;
@@ -49,13 +58,10 @@ body {
   }
 }
 
-.leaflet-popup-tip {
-  background-color: #33b5e5 !important;
-}
-
 .leaflet-popup-content-wrapper {
   border-radius: 0px !important;
-  color: white !important;
-  border: 2px solid #33b5e5;
-  background-color: black !important;
+}
+
+.leaflet-popup-content {
+  margin: 1.5rem 1rem 1rem 1rem !important;
 }
