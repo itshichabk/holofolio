@@ -15,9 +15,8 @@ export default function WelcomeSection() {
         <HelloWorldCode/>
 
         <SettingsRow link="/aboutme/timeline" title="My tech journey" value="My progress over the years"/>
-        <SettingsRow link="/aboutme/skills" title="Skills"/>
-        <SettingsRow link="/aboutme/hobbies" title="Hobbies" value="Tech and non-tech"/>
-        <SettingsRow link="/aboutme/specs" title="System information" value="More details"/>
+        <SettingsRow link="/aboutme/projects" title="My projects"/>
+        <SettingsRow link="/aboutme/hobbies" title="My hobbies" value="Tech and non-tech related"/>
 
         <div className="my-6 lg:mx-2 text-justify">
             <p className="mb-2">
