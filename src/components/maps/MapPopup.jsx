@@ -14,7 +14,7 @@ export default function MapPopup({place, setImgPopup, setSelectedImg}) {
 
   return (
     <Popup className="!font-sans !w-64 roboto">
-        <img src={"/img/travel/" + imgName + ".jpg"} alt="No picture..." className="object-cover w-full max-h-32 mb-2 hover:cursor-zoom-in" onClick={showImgPopup}/>
+        <img src={"/img/travel/" + imgName + ".jpg"} alt="No picture..." className="object-cover w-full max-h-32 mb-2 hover:cursor-pointer" onClick={showImgPopup}/>
         <h1 className="text-lg text-center">{place.name}</h1>
         <p className="!m-0 text-center">{place.description.en}</p>
     </Popup>
