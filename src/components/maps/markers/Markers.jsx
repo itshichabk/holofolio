@@ -1,17 +1,16 @@
-import BruxellesMarker from "./BruxellesMarker";
-import LondonMarker from "./LondonMarker";
-import MontrealMarker from "./MontrealMarker";
-import ParisMarker from "./ParisMarker";
-import ToulouseMarker from "./ToulouseMarker";
+import MapMarker from "./MapMarker";
+import MapPopup from "../MapPopup";
 
-export default function Markers() {
+export default function Markers({places}) {
+  //const places = []//await travelPlacesDB();
+  
   return (
     <>
-        <LondonMarker/>
-        <ParisMarker/>
-        <ToulouseMarker/>
-        <BruxellesMarker/>
-        <MontrealMarker/>
+      { places.map((place, index) => 
+        <MapMarker position={place.position} key={index}>
+          <MapPopup>{place.name}<br/>{place.description.en}</MapPopup>
+        </MapMarker>)
+      }    
     </>
   )
 }

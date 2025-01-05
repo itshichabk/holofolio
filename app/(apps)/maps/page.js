@@ -1,13 +1,12 @@
+import MapContainer from "@/src/components/maps/MapContainer";
+import { travelPlacesDB } from "@/src/utils/db";
 
-"use client";
+export default async function TravelMapsPage() {
+  const places = await travelPlacesDB();
 
-import dynamic from "next/dynamic";
-const Map = dynamic(() => import('@/src/components/maps/Map'), {loading: () => <p>A map is loading</p>, ssr: false });
-
-export default function TravelMapsPage() {
   return (
     <>
-      <Map/>
+      <MapContainer places={places}/>
     </>
   )
 }
