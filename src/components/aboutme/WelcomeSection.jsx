@@ -10,12 +10,12 @@ export default function WelcomeSection() {
   const pathname = usePathname();
 
   return (
-    <div className={"lg:flex-auto overflow-y-scroll px-4 lg:min-w-[350px] lg:w-1/4 lg:bg-black bg-opacity-75" + (pathname != "/aboutme" ? " hidden lg:block" : "")}>
+    <div className={"lg:flex-auto overflow-y-scroll px-4 lg:min-w-[350px] lg:w-1/5 lg:bg-black bg-opacity-75" + (pathname != "/aboutme" ? " hidden lg:block" : "")}>
         <Image src="/img/hicham.jpeg" alt="Hicham" width={96} height={96} className="mt-12 mb-4 mx-auto rounded-full border-2 border-holo"/>
         <HelloWorldCode/>
 
         <SettingsRow link="/aboutme/timeline" title="My tech journey" value="My progress over the years"/>
-        <SettingsRow link="/aboutme/skills" title="Skills"/>
+        <SettingsRow link="/aboutme/skills" title="My skills" value="Technologies I am familiar with and more"/>
         <SettingsRow link="/aboutme/hobbies" title="Hobbies" value="Tech and non-tech"/>
         <SettingsRow link="/aboutme/specs" title="System information" value="More details"/>
 

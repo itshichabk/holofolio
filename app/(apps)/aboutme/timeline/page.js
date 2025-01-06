@@ -32,7 +32,7 @@ export default function Timeline() {
         It felt so much faster and it even ran a newer version of Android that was never officially released by Samsung. That was my first proud tech achievement.
       </p>
 
-      <h2 className="mt-6 mb-2 text-holo font-bold text-2xl text-start leading-6">2015-2021 — <span className="whitespace-nowrap text-xl lg:text-2xl">Computer adventures and misadventures</span></h2>
+      <h2 className="mt-6 mb-2 text-holo font-bold text-2xl text-start leading-6">2015-2021 — <span className="whitespace-nowrap text-xl lg:text-2xl">Computer (mis)adventures</span></h2>
       <p className="mb-2">
         Soon after, I started fiddling with computers too by installing other versions of Windows, such as 8.1 and even the technical preview of Windows 10 in early 2015 before its final release.
         I later installed Ubuntu too, mainly to <Hyperlink onClick={() => setXda(true)} href="https://xdaforums.com/t/rom-sm-g350e-cyanogenmod-11-news.3226820/page-2#post-64789723">try building an Android ROM on it with no success...</Hyperlink>
