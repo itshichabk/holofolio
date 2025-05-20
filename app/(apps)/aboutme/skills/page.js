@@ -2,6 +2,8 @@ import Databases from "@/src/components/aboutme/skills/sections/Databases";
 import ProgrammingLanguages from "@/src/components/aboutme/skills/sections/ProgrammingLanguages";
 import Servers from "@/src/components/aboutme/skills/sections/Servers";
 import WebDevelopment from "@/src/components/aboutme/skills/sections/WebDevelopment";
+import DevOps from "@/src/components/aboutme/skills/sections/DevOps";
+import VirtualMachines from "@/src/components/aboutme/skills/sections/VirtualMachines";
 
 export default function Skills() {
     return (
@@ -13,6 +15,8 @@ export default function Skills() {
         <Databases/>
         <WebDevelopment/>
         <Servers/>
+        <DevOps/>
+        <VirtualMachines/>
       </div>
     )
   }

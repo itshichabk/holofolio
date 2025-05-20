@@ -37,7 +37,7 @@ export default function ClockWidget() {
 
     return (
         <div className="select-none absolute left-1/2 -translate-x-1/2 top-1/4 -translate-y-1/4">
-            <div className="clock-widget text-8xl lg:text-9xl mb-4">{time}</div>
+            <div className="clock-widget text-8xl lg:text-9xl mb-2">{time}</div>
             <p className="font-bold text-center opacity-80 -translate-y-5 lg:-translate-y-8 lg:text-lg">{date}</p>
         </div>
     )

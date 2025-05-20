@@ -12,7 +12,8 @@ export default function HelloWorldCode() {
     <>printf("{helloWorld}");</>,
     <>console.log("{helloWorld}");</>,
     <>std::cout {"<<"} "{helloWorld}";</>,
-    <>System.out.println("{helloWorld}");</>
+    <>System.out.println("{helloWorld}");</>,
+    <>Console.WriteLine("{helloWorld}");</>
   ];
 
   const [line, setLine] = useState(5);

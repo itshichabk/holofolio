@@ -7,7 +7,7 @@ export default function Age() {
 
   useEffect(() => {
     const birthday = new Date("2003-11-13");
-    const today    = new Date();
+    const today = new Date();
     const years = today.getFullYear() - birthday.getFullYear();
 
     if(today.getMonth() < birthday.getMonth() || (today.getMonth() == birthday.getMonth() && today.getDate() < today.getDate()))
