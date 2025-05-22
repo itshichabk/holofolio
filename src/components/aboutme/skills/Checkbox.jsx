@@ -9,7 +9,7 @@ export default function Checkbox({setFilter}) {
   return (
     <div className="mt-4">
         <input type="checkbox" id="filter" name="filter" checked={filter} onChange={() => setFilter(!filter)} className="mr-2"/>
-        <label htmlFor="filter">Highlight skills used in this project!</label>
+        <label htmlFor="filter">Highlight skills used to make this project possible!</label>
     </div>
   )
 }
