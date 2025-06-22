@@ -1,7 +1,10 @@
 "use client";
 import { useEffect, useState } from "react"
+import {useTranslations, useLocale} from 'next-intl';
 
 export default function ClockWidget() {
+    const locale = useLocale();
+
     const [time, setTime] = useState("");
     const [date, setDate] = useState();
 
@@ -39,6 +42,7 @@ export default function ClockWidget() {
         <div className="select-none absolute left-1/2 -translate-x-1/2 top-1/4 -translate-y-1/4">
             <div className="clock-widget text-8xl lg:text-9xl">{time}</div>
             <p className="font-bold text-center opacity-80 -translate-y-5 lg:-translate-y-8 lg:text-lg">{date}</p>
+            <p>{locale}</p>
         </div>
     )
 }
