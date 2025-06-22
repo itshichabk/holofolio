@@ -2,5 +2,24 @@
     "Global":
     {
         "hello": "Helo worlde!"
+    },
+    "Launcher":
+    {
+        "drawer": "Drawer",
+        "aboutme": "About me",
+        "browser": "Browser",
+        "camera": "Camera",
+        "contact": "Contact",
+        "settings": "Settings"
+    },
+    "AboutMe":
+    {
+        "intro-1": "Hi! I'm Hicham Abekiri, a ",
+        "intro-2": " year old programmer, full-stack Web developer, and computer technician.",
+        "intro-3": "Technology enthusiast since I was a kid, I have always loved troubleshooting and finding solutions to problems, especially if they're less obvious.",
+        "intro-4": "I mainly master structured programming and OOP, relational databases, and full-stack Web development. I am also able to install, maintain and repair computers, and I have basic knowledge of networking.",
+        "intro-5": "My goal is to further explore and gather new skills in software development, as well as discover other fields in computer science.",
+
+        "click": "Click on a link for more!"
     }
 }

@@ -5,8 +5,10 @@ import HelloWorldCode from "../HelloWorldCode";
 import SettingsRow from "./SettingsRow";
 import { usePathname } from "next/navigation";
 import Age from "./Age";
+import { useTranslations } from "next-intl";
 
 export default function WelcomeSection() {
+  const t = useTranslations('AboutMe');
   const pathname = usePathname();
 
   return (
@@ -21,22 +23,16 @@ export default function WelcomeSection() {
 
         <div className="my-6 lg:mx-2 text-justify">
             <p className="mb-2">
-            Hi! I'm Hicham Abekiri, a <Age /> year old programmer, full-stack
-            Web developer, and computer technician.
+              {t("intro-1")} <Age /> {t("intro-2")}
             </p>
             <p className="mb-2">
-            Technology enthusiast since I was a kid, I have always
-            loved troubleshooting and finding solutions to problems,
-            especially if they're less obvious.
+              {t("intro-3")}
             </p>
             <p className="mb-2">
-            I mainly master structured programming and OOP, relational
-            databases, and full-stack Web development. I am also able to install, maintain
-            and repair computers, and I have basic knowledge of networking.
+              {t("intro-4")}
             </p>
             <p className="mb-2">
-            My goal is to further explore and gather new skills in software
-            development, as well as discover other fields in computer science.
+              {t("intro-5")}
             </p>
         </div>
     </div>
