@@ -10,5 +10,5 @@ export async function getUserLocale() {
 }
 
 export async function setUserLocale(locale) {
-  (await cookies()).set(COOKIE_NAME, locale);
+  (await cookies()).set(COOKIE_NAME, locale, { maxAge: 2592000 });
 }
