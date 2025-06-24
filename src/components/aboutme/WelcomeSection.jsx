@@ -16,10 +16,10 @@ export default function WelcomeSection() {
         <Image src="/img/hicham.jpeg" alt="Hicham" width={96} height={96} className="mt-12 mb-4 mx-auto rounded-full border-2 border-holo"/>
         <HelloWorldCode/>
 
-        <SettingsRow link="/aboutme/timeline" title="My tech journey" value="My progress over the years"/>
-        <SettingsRow link="/aboutme/skills" title="Skills"/>
-        <SettingsRow link="/aboutme/hobbies" title="Hobbies" value="Tech and non-tech"/>
-        <SettingsRow link="/aboutme/specs" title="System information" value="More details"/>
+        <SettingsRow link="/aboutme/timeline" title={t("techjourney")} value={t("techjourney_desc")}/>
+        <SettingsRow link="/aboutme/skills" title={t("skills")}/>
+        <SettingsRow link="/aboutme/hobbies" title={t("hobbies")}value={t("hobbies_desc")}/>
+        <SettingsRow link="/aboutme/specs" title={t("sysinfo")} value={t("sysinfo_desc")}/>
 
         <div className="my-6 lg:mx-2 text-justify">
             <p className="mb-2">
