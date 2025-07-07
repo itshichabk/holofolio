@@ -1,6 +1,8 @@
 import Image from "next/image";
+import {useTranslations} from 'next-intl';
 
 export default function AppLayout({ icon, title, translucent, children, name }) {
+  const t = useTranslations('Launcher');
   const iconPath = "/icons/apps/" + (name ?  name + ".ico" : "droid.webp");
 
   return (
@@ -14,7 +16,7 @@ export default function AppLayout({ icon, title, translucent, children, name }) 
             height={36}
             className="mr-1"
           />
-          <p>{ title }</p>
+          <p>{ t(name) }</p>
         </div>
         <div className="sm:mx-3 h-full flex flex-auto lg:mx-0 overflow-hidden relative overflow-y-scroll">
           {children}
