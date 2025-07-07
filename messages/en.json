@@ -1,0 +1,42 @@
+{
+    "Global":
+    {
+        "hello": "Helo worlde!"
+    },
+    "Launcher":
+    {
+        "drawer": "Drawer",
+        "aboutme": "About me",
+        "browser": "Browser",
+        "camera": "Camera",
+        "contact": "Contact",
+        "settings": "Settings"
+    },
+    "AboutMe":
+    {
+        "intro-1": "Hi! I'm Hicham Abekiri, a ",
+        "intro-2": " year old programmer, full-stack Web developer, and computer technician.",
+        "intro-3": "Technology enthusiast since I was a kid, I have always loved troubleshooting and finding solutions to problems, especially if they're less obvious.",
+        "intro-4": "I mainly master structured programming and OOP, relational databases, and full-stack Web development. I am also able to install, maintain and repair computers, and I have basic knowledge of networking.",
+        "intro-5": "My goal is to further explore and gather new skills in software development, as well as discover other fields in computer science.",
+
+        "click": "Click on a link for more!",
+        "techjourney": "My tech journey",
+        "techjourney_desc": "My progress over the years",
+        "skills": "Skills",
+        "hobbies": "Hobbies",
+        "hobbies_desc": "Tech and non-tech",
+        "sysinfo": "System information",
+        "sysinfo_desc": "More details"
+    },
+    "Contact":
+    {
+        "contactme": "Contact me",
+        "description": "Want to reach out to me directly? You can fill the form down below or send me an e-mail at",
+        "name": "Your name",
+        "email": "Your e-mail address",
+        "subject": "Subject",
+        "message": "Your message",
+        "submit": "Submit"
+    }
+}

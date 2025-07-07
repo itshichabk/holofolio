@@ -4,6 +4,7 @@ import FormInput from './FormInput';
 import TextArea from './TextArea';
 import SubmitButton from './SubmitButton';
 import emailjs from '@emailjs/browser';
+import { useTranslations } from "next-intl";
 
 export default function ContactForm() {
 
@@ -22,11 +23,13 @@ export default function ContactForm() {
     );
   }
 
+  const t = useTranslations('Contact');
+
   return (
     <Form className='my-6' action={handleSubmit}>
-      <FormInput label="Your e-mail address" name="email" type="email"/>
-      <FormInput label="Your name" name="name" type="text"/>
-      <FormInput label="Subject" name="subject" type="text"/>
+      <FormInput label={t("email")} name="email" type="email"/>
+      <FormInput label={t("name")} name="name" type="text"/>
+      <FormInput label={t("subject")}  name="subject" type="text"/>
       <TextArea/>
       <SubmitButton/>
     </Form>

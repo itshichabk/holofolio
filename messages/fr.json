@@ -1,0 +1,43 @@
+{
+    "Global":
+    {
+        "hello": "Bonjoure!"
+    },
+    "Launcher":
+    {
+        "drawer": "Applications",
+        "aboutme": "À propos de moi",
+        "browser": "Navigateur",
+        "camera": "Appareil photo",
+        "contact": "Contact",
+        "settings": "Paramètres"
+    },
+    "AboutMe":
+    {
+        "intro-1": "Salut! Je m'appelle Hicham Abekiri. J'ai ",
+        "intro-2": " ans, et je suis un programmeur, développeur Web full-stack, et technicien informatique.",
+        "intro-3": "Curieux et passionné de technologie depuis mes dix ans, j'aime chercher des solutions à des problèmes plus ou moins évidents.",
+        "intro-4": "Je maîtrise principalement la programmation structurée et orientée objet, les bases de données relationnelles, ainsi que de nombreuses technologies utilisées en développement Web, autant en frontend qu'en backend. Je suis aussi capable d'installer, maintenir et réparer un ordinateur, peu importe son système d'exploitation, et je possède des connaissances de base en réseautique.",
+        "intro-5": "Mon objectif est de continuer à découvrir et acquérir des nouvelles connaissances dans le domaine du développement logiciel, et d'explorer aussi d'autres domaines de l'informatique.",
+
+        "click": "Cliquez sur un lien !",
+        "techjourney": "Mon parcours informatique",
+        "techjourney_desc": "Des hauts et des bas au fil des années",
+        "skills": "Mes compétences",
+        "hobbies": "Mes passe-temps",
+        "hobbies_desc": "Pas juste des pixels!",
+        "sysinfo": "Informations système",
+        "sysinfo_desc": "Plus de détails"
+
+    },
+    "Contact":
+    {
+        "contactme": "Contactez-moi",
+        "description": "Vous voulez prendre contact avec moi directement? Vous pouvez remplir ce formulaire ou m'envoyer un courriel directement à ",
+        "name": "Votre nom",
+        "email": "Votre adresse courriel",
+        "subject": "Objet",
+        "message": "Votre message",
+        "submit": "Envoyer"
+    }
+}
